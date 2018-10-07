@@ -4,7 +4,8 @@ var service = require('../services/ownership')
 
 router.post('/create',(req,res)=>{
     //Create ownership
-    service.create(req).then((response)=>{
+    console.log("req",req.body)
+    service.create(req.body).then((response)=>{
         res.status(200).send(response)
     })
 
@@ -13,7 +14,7 @@ router.post('/create',(req,res)=>{
 
 router.get('/read',()=>{
     //Read ownership
-    service.read(req).then((response)=>{
+    service.read(req.body).then((response)=>{
         res.status(200).send(response)
     })
 })

@@ -1,8 +1,13 @@
+const JSON = require('circular-json');
+
+
 var ownershipService = {
     create: function(req){
         //
         return new Promise((resolve,reject)=> {
-            resolve(req);
+            var res = JSON.stringify(req)
+            console.log("res",req)
+            resolve(res);
         })
     },
 

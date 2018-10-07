@@ -9,6 +9,8 @@
   "author": "Immanuel John ( imjjohn18@gmail.com )",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "circular-json": "^0.5.7",
     "express": "^4.16.3"
   }
 }
